@@ -420,7 +420,7 @@ body {
 }
 
 /* iphone 8 portrait for all social media + music icons + mtb/debut */
-@media (max-width: 380px) and (min-width: 350px) {
+@media (max-width: 395px) and (min-width: 350px) {
   .musicIconsBox {
     display: flex;
     flex-direction: row;
