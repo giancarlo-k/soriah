@@ -1,0 +1,1059 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(223, 222, 232);
+}
+
+.signatureContainer {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.signatureLink {
+  z-index: 1;
+  width: 9%;
+  margin-left: 3vh;
+  margin-top: 3vh;
+}
+
+.signatureContainer > a > img {
+  width: 13vh;
+  height: auto;
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.signatureContainer > a > img:hover {
+  filter: invert(1);
+}
+
+
+.gif_container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background: url(images/MTB_bg.gif);
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.4);
+  filter: blur(1px);
+}
+
+.coverArtContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverArtContainer > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: auto;
+  margin-top: 10vh;
+}
+
+.coverArtContainer > a > img {
+  width: 83%;
+  height: auto;
+  box-shadow:  6px 6px 9px rgb(87, 87, 87);
+  transition: 0.3s;
+  animation: fadeInAnimation ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.coverArtContainer > a > img:hover {
+  width: 87%;
+  height: auto;
+  cursor: pointer;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5vh;
+  color: rgb(0, 0, 0);
+  font-family: 'Akatab', sans-serif;
+}
+
+
+.musicIconsBox {
+  display: flex;
+  flex-direction: row;
+  width: 40vh;
+  height: 30vh;
+  position: absolute;
+  top: 10.5%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.spotify, .soundcloud {
+  width: 7vh;
+  height: auto;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+
+.apple {
+  border-radius: 100%;
+  width: 8vh;
+  height: auto;
+  transition: 0.3s;
+}
+
+.spotify:hover, .soundcloud:hover, .apple:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.mtbBox {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1vh;
+}
+
+.mtb {
+  width: 50vh;
+  height: auto;
+  filter: contrast(220%);
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.debutBox {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7vh;
+}
+
+.debut {
+  width: 17vh;
+  height: auto;
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  filter: brightness(30%);
+  margin: 1vh;
+}
+
+.socialmediaiconsBox > a > img {
+  width: 6vh;
+  height: auto;
+  transition: 0.3s;
+  border-radius: 100%;
+  animation: fadeInAnimation ease 4.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.socialmediaiconsBox > a > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.socialmediaiconsBox {
+  display: flex;
+  width: 70vh;
+  height: 10vh;
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+  top: 82vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+  .coverArtContainer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .coverArtContainer > a > img {
+    width: 110%;
+    height: auto;
+    box-shadow:  6px 6px 9px rgb(87, 87, 87);
+    transition: 0.3s;
+  }
+  
+  .coverArtContainer > a > img:hover {
+    width: 115%;
+    height: auto;
+    cursor: pointer;
+    box-shadow:  -4px -4px 9px rgb(87, 87, 87);
+  }
+
+  .signatureLink {
+    z-index: 1;
+    width: 11.5%;
+    margin-left: 2vh;
+    margin-top: 2vh;
+  }
+  
+  .signatureContainer > a > img {
+    width: 10vh;
+    height: auto;
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+  
+  .signatureContainer > a > img:hover {
+    filter: invert(1);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Akatab', sans-serif;
+  }
+
+  
+}
+
+@media (max-width: 810px) and (min-width: 780px) {
+  .coverArtContainer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .coverArtContainer > a > img {
+    width: 60%;
+    height: auto;
+    box-shadow:  6px 6px 9px rgb(87, 87, 87);
+    transition: 0.3s;
+  }
+  
+  .coverArtContainer > a > img:hover {
+    width: 65%;
+    height: auto;
+    cursor: pointer;
+    box-shadow:  -4px -4px 9px rgb(87, 87, 87);
+  }
+
+  .signatureLink {
+    z-index: 1;
+    width: 11.5%;
+    margin-left: 2vh;
+    margin-top: 2vh;
+  }
+  
+  .signatureContainer > a > img {
+    width: 10vh;
+    height: auto;
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+  
+  .signatureContainer > a > img:hover {
+    filter: invert(1);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Akatab', sans-serif;
+  }
+
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 16%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 60vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 76vh;
+  }
+}
+
+/* iphone 8 portrait for all social media + music icons + mtb/debut */
+@media (max-width: 380px) and (min-width: 350px) {
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 70vh;
+  }
+}
+
+@media (max-width: 410px) and (min-width: 390px) {
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 66vh;
+  }
+}
+
+@media (max-width: 440px) and (min-width: 411px) {
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 70vh;
+  }
+}
+
+@media (max-width: 1930px) and (min-width: 1880px) {
+
+  .coverArtContainer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .coverArtContainer > a > img {
+    width: 40%;
+    height: auto;
+    box-shadow:  6px 6px 9px rgb(87, 87, 87);
+    transition: 0.3s;
+  }
+  
+  .coverArtContainer > a > img:hover {
+    width: 45%;
+    height: auto;
+    cursor: pointer;
+    box-shadow:  -4px -4px 9px rgb(87, 87, 87);
+  }
+  
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 16%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 50vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 75vh;
+  }
+}
+
+/* se portrait for all social media + music icons + mtb/debut */
+@media (max-width: 330px) {
+  .musicIconsBox {
+    display: flex;
+    flex-direction: row;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .spotify, .soundcloud {
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+  
+  .apple {
+    border-radius: 100%;
+    width: 7vh;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .spotify:hover, .soundcloud:hover, .apple:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 45vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 17vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+  
+  .socialmediaiconsBox > a > img {
+    width: 6vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 52vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 75vh;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 411px) {
+
+  .coverArtContainer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .coverArtContainer > a > img {
+    width: 120%;
+    height: auto;
+    box-shadow:  6px 6px 9px rgb(87, 87, 87);
+    transition: 0.3s;
+  }
+  
+  .coverArtContainer > a > img:hover {
+    width: 125%;
+    height: auto;
+    cursor: pointer;
+    box-shadow:  -4px -4px 9px rgb(87, 87, 87);
+  }
+
+  .mtbBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vh;
+  }
+  
+  .mtb {
+    width: 40vh;
+    height: auto;
+    filter: contrast(220%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .debutBox {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+  }
+  
+  .debut {
+    width: 13vh;
+    height: auto;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    filter: brightness(30%);
+    margin: 1vh;
+  }
+
+  .socialmediaiconsBox > a > img {
+    width: 4.5vh;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 100%;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .socialmediaiconsBox > a > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  .socialmediaiconsBox {
+    display: flex;
+    width: 40vh;
+    height: 20vh;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 70vh;
+  }
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+
+
+}

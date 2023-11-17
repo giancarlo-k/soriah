@@ -1,0 +1,147 @@
+
+
+.release1 {
+  font-family: 'Akatab', sans-serif;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 15vh;
+  padding: 2vh;
+  border-radius: 3%;
+  justify-content: center;
+  background: url(images/MTB_bg.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fadeInAnimation ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  box-shadow: 2px 2px 8px black;
+  transition: 0.3s;
+  cursor: url('images/discord.png'), auto;
+  
+}
+
+.release1:hover {
+  box-shadow: 4px 4px 8px black;
+  
+}
+
+.release1Cover {
+  margin: 3vh;
+}
+
+.release1Cover > img {
+  width: 40vh;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 8px black;
+}
+
+
+.release1TextBox {
+  width: 40vh;
+  color: black;
+}
+
+.release1Text {
+  font-size: 4vh;
+}
+
+.release1Credits {
+  width: 40vh;
+  color: rgb(227, 226, 232);
+}
+
+.release1Credits > div > a {
+  color: rgb(227, 226, 232);
+  transition: 0.2s;
+}
+
+.release1Credits > div > a:visited, .release1Credits > div > a::before {
+  color: rgb(227, 226, 232);
+}
+
+.release1Credits > div > a:hover {
+  color: rgb(59, 150, 70);
+}
+
+
+
+@media (max-height: 1000px) and (min-height: 560px) and (max-width: 450px) and (min-width: 300px) {
+
+  .release1 {
+    font-family: 'Akatab', sans-serif;
+    width: 30vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 15vh;
+    padding: 2vh;
+    border-radius: 3%;
+    justify-content: center;
+    background: url(images/MTB_bg.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    box-shadow: 2px 2px 8px black;
+  }
+  
+  .release1Cover {
+    margin: 1.5vh;
+  }
+  
+  .release1Cover > img {
+    width: 30vh;
+    height: auto;
+    border-radius: 5%;
+  }
+  
+  
+  .release1TextBox {
+    width: 30vh;
+    color: black;
+  }
+  
+  .release1Text {
+    font-size: 3vh;
+  }
+  
+  .release1Credits {
+    width: 30vh;
+    color: rgb(227, 226, 232);
+    font-size: 1.9vh;
+  }
+  
+  .release1Credits > div > a {
+    color: rgb(227, 226, 232);
+    transition: 0.2s;
+  }
+  
+  .release1Credits > div > a:visited, .release1Credits > div > a::before {
+    color: rgb(227, 226, 232);
+  }
+  
+  .release1Credits > div > a:hover {
+    color: rgb(59, 150, 70);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+
+
+}

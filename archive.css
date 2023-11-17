@@ -1,0 +1,12 @@
+.progressBox {
+  z-index: 1;
+  align-items: center;
+  top: 25vh;
+  position: absolute;
+}
+
+.progressGif {
+  width: 40vh;
+  height: auto;
+}
+
